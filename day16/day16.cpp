@@ -84,16 +84,12 @@ long long calc(int id, vector<long long> &nums){
 		long long min_num = INT64_MAX;
 		for(auto num: nums)
 			min_num = min(min_num, num);
-		if(min_num == INT64_MAX)
-			cout <<"????\n";
 		return min_num;
 	}
 	if(id == 3){
 		long long max_num = INT64_MIN;
 		for(auto num: nums)
 			max_num = max(max_num, num);
-		if(max_num == INT32_MIN)
-			cout << "????\n";
 		return max_num;
 	}
 	if(id == 5)
